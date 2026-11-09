@@ -2,8 +2,30 @@
   "schemaVersion": 3,
   "payloads": [
     {
+      "payloadId": "e3q-S928BXXS6DZG1-ksu325-v2",
+      "displayName": "Galaxy S24 Ultra (International) | DZG1 | KernelSU 3.2.5 + SELinux hide (working)",
+      "models": [
+        "SM-S928B"
+      ],
+      "kernelVersions": [
+        "6.1.145",
+        "6.1.145-android14-11-33419968-abS928BXXS6DZG1"
+      ],
+      "exploit": {
+        "url": "https://raw.githubusercontent.com/7AKMM/rmg-payloads-e3q-dzg1/main/artifacts/e3q-S928BXXS6DZG1/cve-2026-43499-app-v2.so",
+        "size": 104128,
+        "sha256": "4fb37e4d9511bded64ea2534f4227eae44604cf19818a3df9a0e12f8b0a45764"
+      },
+      "kernelsu": {
+        "url": "https://raw.githubusercontent.com/7AKMM/rmg-payloads-e3q-dzg1/main/kernelsu/ksud-e3q-S928BXXS6DZG1-kdp",
+        "size": 4891808,
+        "sha256": "edba75d3f66992cfb10eaf705af59fb8b760e52c476b2e3bf7636dd07b7d87e2",
+        "version": "3.2.5"
+      }
+    },
+    {
       "payloadId": "e3q-S928BXXS6DZG1-ksu325",
-      "displayName": "Galaxy S24 Ultra (International) | DZG1 | KernelSU 3.2.5 + SELinux hide fix",
+      "displayName": "Galaxy S24 Ultra (International) | DZG1 | KernelSU 3.2.5 (old engine, fallback)",
       "models": [
         "SM-S928B"
       ],
@@ -20,50 +42,6 @@
         "url": "https://raw.githubusercontent.com/7AKMM/rmg-payloads-e3q-dzg1/main/kernelsu/ksud-e3q-S928BXXS6DZG1-kdp",
         "size": 4891808,
         "sha256": "edba75d3f66992cfb10eaf705af59fb8b760e52c476b2e3bf7636dd07b7d87e2",
-        "version": "3.2.5"
-      }
-    },
-    {
-      "payloadId": "e3q-S928BXXS6DZG1-ksu325-v2",
-      "displayName": "Galaxy S24 Ultra (International) | DZG1 | KernelSU 3.2.5 (new race engine)",
-      "models": [
-        "SM-S928B"
-      ],
-      "kernelVersions": [
-        "6.1.145",
-        "6.1.145-android14-11-33419968-abS928BXXS6DZG1"
-      ],
-      "exploit": {
-        "url": "https://raw.githubusercontent.com/7AKMM/rmg-payloads-e3q-dzg1/main/artifacts/e3q-S928BXXS6DZG1/cve-2026-43499-app-v2.so",
-        "size": 104128,
-        "sha256": "4fb37e4d9511bded64ea2534f4227eae44604cf19818a3df9a0e12f8b0a45764"
-      },
-      "kernelsu": {
-        "url": "https://raw.githubusercontent.com/7AKMM/rmg-payloads-e3q-dzg1/main/kernelsu/ksud-e3q-S928BXXS6DZG1-kdp",
-        "size": 4891808,
-        "sha256": "edba75d3f66992cfb10eaf705af59fb8b760e52c476b2e3bf7636dd07b7d87e2",
-        "version": "3.2.5"
-      }
-    },
-    {
-      "payloadId": "e3q-S928BXXS6DZG1-ksu325-v2-origksu",
-      "displayName": "Galaxy S24 Ultra (International) | DZG1 | new race engine + original KernelSU daemon (test)",
-      "models": [
-        "SM-S928B"
-      ],
-      "kernelVersions": [
-        "6.1.145",
-        "6.1.145-android14-11-33419968-abS928BXXS6DZG1"
-      ],
-      "exploit": {
-        "url": "https://raw.githubusercontent.com/7AKMM/rmg-payloads-e3q-dzg1/main/artifacts/e3q-S928BXXS6DZG1/cve-2026-43499-app-v2.so",
-        "size": 104128,
-        "sha256": "4fb37e4d9511bded64ea2534f4227eae44604cf19818a3df9a0e12f8b0a45764"
-      },
-      "kernelsu": {
-        "url": "https://raw.githubusercontent.com/7AKMM/rmg-payloads-e3q-dzg1/main/kernelsu/ksud-e3q-S928BXXS6DZF2-kdp",
-        "size": 4748232,
-        "sha256": "43f451313dc111429187f8f93e76c57c42976323782aac936c1c09aa309b76b3",
         "version": "3.2.5"
       }
     },
