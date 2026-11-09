@@ -22,6 +22,50 @@
         "sha256": "edba75d3f66992cfb10eaf705af59fb8b760e52c476b2e3bf7636dd07b7d87e2",
         "version": "3.2.5"
       }
+    },
+    {
+      "payloadId": "e3q-S928BXXS6DZG1-ksu325-v2",
+      "displayName": "Galaxy S24 Ultra (International) | DZG1 | KernelSU 3.2.5 (new race engine)",
+      "models": [
+        "SM-S928B"
+      ],
+      "kernelVersions": [
+        "6.1.145",
+        "6.1.145-android14-11-33419968-abS928BXXS6DZG1"
+      ],
+      "exploit": {
+        "url": "https://raw.githubusercontent.com/7AKMM/rmg-payloads-e3q-dzg1/main/artifacts/e3q-S928BXXS6DZG1/cve-2026-43499-app-v2.so",
+        "size": 104128,
+        "sha256": "4fb37e4d9511bded64ea2534f4227eae44604cf19818a3df9a0e12f8b0a45764"
+      },
+      "kernelsu": {
+        "url": "https://raw.githubusercontent.com/7AKMM/rmg-payloads-e3q-dzg1/main/kernelsu/ksud-e3q-S928BXXS6DZG1-kdp",
+        "size": 4891808,
+        "sha256": "edba75d3f66992cfb10eaf705af59fb8b760e52c476b2e3bf7636dd07b7d87e2",
+        "version": "3.2.5"
+      }
+    },
+    {
+      "payloadId": "e3q-S928BXXS6DZG1-ksu325-diag",
+      "displayName": "Galaxy S24 Ultra (International) | DZG1 | KernelSU 3.2.5 (diagnostic payload)",
+      "models": [
+        "SM-S928B"
+      ],
+      "kernelVersions": [
+        "6.1.145",
+        "6.1.145-android14-11-33419968-abS928BXXS6DZG1"
+      ],
+      "exploit": {
+        "url": "https://raw.githubusercontent.com/7AKMM/rmg-payloads-e3q-dzg1/main/artifacts/e3q-S928BXXS6DZG1/cve-2026-43499-app-diag.so",
+        "size": 104128,
+        "sha256": "c3804ea68ab65fecf1696800d440a0f8551415d76cd31b7dc3d63ffe21308f1a"
+      },
+      "kernelsu": {
+        "url": "https://raw.githubusercontent.com/7AKMM/rmg-payloads-e3q-dzg1/main/kernelsu/ksud-e3q-S928BXXS6DZG1-kdp",
+        "size": 4891808,
+        "sha256": "edba75d3f66992cfb10eaf705af59fb8b760e52c476b2e3bf7636dd07b7d87e2",
+        "version": "3.2.5"
+      }
     }
   ]
 }
