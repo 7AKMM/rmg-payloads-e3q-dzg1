@@ -22,6 +22,28 @@
         "sha256": "edba75d3f66992cfb10eaf705af59fb8b760e52c476b2e3bf7636dd07b7d87e2",
         "version": "3.2.5"
       }
+    },
+    {
+      "payloadId": "e3q-S928BXXS6DZG1-ksu325-diag",
+      "displayName": "Galaxy S24 Ultra (International) | DZG1 | KernelSU 3.2.5 (diagnostic payload)",
+      "models": [
+        "SM-S928B"
+      ],
+      "kernelVersions": [
+        "6.1.145",
+        "6.1.145-android14-11-33419968-abS928BXXS6DZG1"
+      ],
+      "exploit": {
+        "url": "https://raw.githubusercontent.com/7AKMM/rmg-payloads-e3q-dzg1/main/artifacts/e3q-S928BXXS6DZG1/cve-2026-43499-app-diag.so",
+        "size": 104128,
+        "sha256": "ac2167820167145449177531e4fff4d1085827a58612853c17bb70f36d815165"
+      },
+      "kernelsu": {
+        "url": "https://raw.githubusercontent.com/7AKMM/rmg-payloads-e3q-dzg1/main/kernelsu/ksud-e3q-S928BXXS6DZG1-kdp",
+        "size": 4891808,
+        "sha256": "edba75d3f66992cfb10eaf705af59fb8b760e52c476b2e3bf7636dd07b7d87e2",
+        "version": "3.2.5"
+      }
     }
   ]
 }
