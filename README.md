@@ -88,3 +88,25 @@ git apply patches/KernelSU-v3.2.5-samsung-kdp-rkp-defex.patch
 #   cp kernelsu.ko userspace/ksud/bin/aarch64/android14-6.1_kernelsu.ko
 #   cargo build --release --target aarch64-linux-android
 ```
+
+## Verified on device (2026-11-09)
+
+SM-S928B / S928BXXS6DZG1, KernelSU 3.2.5 (32525), the `working` entry
+(`cve-2026-43499-app-diag.so`) with `ksud-e3q-S928BXXS6DZG1-kdp`:
+
+``text
+KernelSU: selinux_hide: set to 1
+KernelSU: selinux_hide: init selinux hide
+KernelSU: selinux_hide: sel_open_handle_status: patch_text refused (-95), diverting with a kprobe
+KernelSU: selinux_hide: sel_open_handle_status: kprobe route active
+KernelSU: selinux_hide: context_write: patch_text refused (-95), diverting with a kprobe
+KernelSU: selinux_hide: context_write: kprobe route active
+KernelSU: selinux_hide: access_write: patch_text refused (-95), diverting with a kprobe
+KernelSU: selinux_hide: access_write: kprobe route active
+KernelSU: selinux_hide: setprocattr: ksu_lsm_hook refused (-14), diverting with a kprobe
+KernelSU: selinux_hide: setprocattr: kprobe route active
+``
+
+All four slots fell back to kprobes exactly as the patch intends: RKP refuses the
+text write (-95) and the LSM table write (-14), and the kprobe route installs.
+`ksud feature get selinux_hide` reports `1` while the hooks are active.
