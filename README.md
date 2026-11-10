@@ -1,12 +1,25 @@
 # rmg-payloads-e3q-dzg1
 
+> **This is a fork-derived, device-specific payload source — not an original project.**
+> The catalog format, the feed contract and the exploit payload come from
+> [BuSung-dev/Root-My-Galaxy-Payloads](https://github.com/BuSung-dev/Root-My-Galaxy-Payloads).
+> The KernelSU patch used here — which contains the **`selinux_hide` kprobe fix** —
+> comes from [rushiranpise/Root-My-Galaxy-Payloads](https://github.com/rushiranpise/Root-My-Galaxy-Payloads),
+> and that fix originates in
+> [PR #257](https://github.com/BuSung-dev/Root-My-Galaxy-Payloads/pull/257) by
+> [**diabl0w**](https://github.com/diabl0w).
+> Full attribution is in [CREDITS.md](CREDITS.md).
+
 Payload pair for the **Galaxy S24 Ultra (SM-S928B)** on firmware **S928BXXS6DZG1**
 (kernel `6.1.145-android14-11-33419968-abS928BXXS6DZG1`), built so the KernelSU
 feature **SELinux Hide** (`selinux_hide`) actually installs on Samsung's
 KDP/RKP-protected kernel.
 
 This is meant to be added as a payload source in **Root My Galaxy Next**
-(`rushiranpise/Root-My-Galaxy-Next`).
+(`rushiranpise/Root-My-Galaxy-Next`). It is a derivative of the two catalogs
+above: only the DZG1 pair, the feed entry for it, and the verification record
+are ours.
+
 
 ## What it contains
 
